@@ -63,7 +63,7 @@ Lancer les VM
 $ vagrant up
 ```
 
-Attention, le demarrage des VMs peut etre long, il depend l'ordinateur utilisé
+Attention, le demarrage des VMs peut etre long, il depend de l'ordinateur utilisé
 
 Une fois, les 3 VMs demarrées, on peut faire quelque tests, exemple de quelques commandes :
 #### VQFX
