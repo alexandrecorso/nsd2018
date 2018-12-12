@@ -158,26 +158,6 @@ vagrant@server:~/ansible$ ansible-playbook -i inventories/hosts pb.juniper.users
 ```
 OUTPUT
 ```
-PLAY [Config Users of Juniper devices] **********************************************************************************************
-
-TASK [roles/base : Create host specific configuration directory] ********************************************************************
-ok: [vqfx]
-
-TASK [roles/base : file] ************************************************************************************************************
-ok: [vqfx]
-
-TASK [roles/base : file] ************************************************************************************************************
-ok: [vqfx]
-
-TASK [roles/base : Base Configuration] **********************************************************************************************
-changed: [vqfx] => (item=users.conf)
-
-TASK [Assembling configurations and copying to conf] ********************************************************************************
-changed: [vqfx]
-
-TASK [Pushing config ... please wait ...] *******************************************************************************************
-changed: [vqfx]
-
 TASK [Print the difference if exists] ***********************************************************************************************
 ok: [vqfx] => {
     "response.diff_lines": [
@@ -235,26 +215,6 @@ vagrant@server:~/ansible$ ansible-playbook -i inventories/hosts pb.juniper.bgp.y
 ```
 OUTPUT
 ```
-PLAY [Config BGP of Juniper devices] ************************************************************************************************
-
-TASK [roles/bgp : Create host specific configuration directory] *********************************************************************
-ok: [vqfx]
-
-TASK [roles/bgp : file] *************************************************************************************************************
-ok: [vqfx]
-
-TASK [roles/bgp : file] *************************************************************************************************************
-changed: [vqfx]
-
-TASK [roles/bgp : BGP Configuration] ************************************************************************************************
-changed: [vqfx] => (item=bgp.conf)
-
-TASK [Assembling configurations and copying to conf] ********************************************************************************
-changed: [vqfx]
-
-TASK [Pushing config ... please wait ...] *******************************************************************************************
-changed: [vqfx]
-
 TASK [Print the difference if exists] ***********************************************************************************************
 ok: [vqfx] => {
     "response.diff_lines": [
